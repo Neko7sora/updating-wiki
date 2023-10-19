@@ -12,13 +12,13 @@ jobs:
 
     steps:
     - name: Checkout the main repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       # You need to set `with.fetch-depth` to 0 if you'll make diff in branches
       # with:
       #   fetch-depth: 0
 
     - name: Checkout the wiki repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: "${{ github.repository }}.wiki"
         # As of Jul 2021, the default branch of a GitHub wiki is `master`, not `main`
