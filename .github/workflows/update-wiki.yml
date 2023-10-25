@@ -25,7 +25,7 @@ jobs:
         ref: master
         path: .wiki
 
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-node@v4
     - name: Generate the Wiki Page
       run: |
         set -xe
